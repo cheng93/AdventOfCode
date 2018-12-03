@@ -1,15 +1,15 @@
 
-namespace AdventOfCode2018.DayTwo
+namespace AdventOfCode2018.Day02
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class DayTwoSolver
+    public class Day02Solver
     {
         public int PuzzleOne(IEnumerable<string> input)
         {
-            var stringParser = new DayTwoStringParser();
+            var stringParser = new Day02StringParser();
 
             var parsed = input.Select(stringParser.Parse);
 
@@ -33,7 +33,7 @@ namespace AdventOfCode2018.DayTwo
 
         public string PuzzleTwo(IEnumerable<string> input)
         {
-            var splitIds = input.Select(x => new DayTwoIds(x));
+            var splitIds = input.Select(x => new Day02Ids(x));
             var wordLength = input.First().Length;
 
             for (var i = 0; i < wordLength; i++)

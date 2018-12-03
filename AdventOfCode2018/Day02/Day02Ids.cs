@@ -1,14 +1,14 @@
 
-namespace AdventOfCode2018.DayTwo
+namespace AdventOfCode2018.Day02
 {
     using System.Collections.Generic;
 
-    public class DayTwoIds
+    public class Day02Ids
     {
         public Dictionary<int, string> Before { get; } = new Dictionary<int, string>();
 
         public Dictionary<int, string> After { get; } = new Dictionary<int, string>();
-        public DayTwoIds(string input)
+        public Day02Ids(string input)
         {
             for (var i = 0; i < input.Length; i++)
             {

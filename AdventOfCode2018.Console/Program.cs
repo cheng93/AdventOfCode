@@ -3,16 +3,16 @@
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using DayOne;
-    using DayTwo;
+    using Day01;
+    using Day02;
     using Console = System.Console;
 
     class Program
     {
         private static IDictionary<int, IPuzzle> puzzles = new Dictionary<int, IPuzzle>()
         {
-            {1, new DayOnePuzzle()},
-            {2, new DayTwoPuzzle()}
+            {1, new Day01Puzzle()},
+            {2, new Day02Puzzle()}
         };
 
         public static async Task Main(string[] args)

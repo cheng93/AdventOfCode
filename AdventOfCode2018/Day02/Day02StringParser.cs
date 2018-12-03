@@ -1,20 +1,20 @@
 
-namespace AdventOfCode2018.DayTwo
+namespace AdventOfCode2018.Day02
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class DayTwoStringParser
+    public class Day02StringParser
     {
-        public DayTwoString Parse(string input)
+        public Day02String Parse(string input)
         {
             var lookup = input
                 .Select(x => x)
                 .GroupBy(x => x)
                 .ToLookup(x => x.Count());
 
-            return new DayTwoString
+            return new Day02String
             {
                 HasTwo = lookup.Contains(2),
                 HasThree = lookup.Contains(3)

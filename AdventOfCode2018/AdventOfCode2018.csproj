@@ -5,13 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="DayOne\PuzzleOne.txt" />
-    <None Remove="DayTwo\PuzzleOne.txt" />
+    <None Remove="Day01\PuzzleOne.txt" />
+    <None Remove="Day02\PuzzleOne.txt" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="DayOne\PuzzleOne.txt" />
-    <EmbeddedResource Include="DayTwo\PuzzleOne.txt" />
+    <EmbeddedResource Include="Day01\PuzzleOne.txt" />
+    <EmbeddedResource Include="Day02\PuzzleOne.txt" />
   </ItemGroup>
 
 </Project>

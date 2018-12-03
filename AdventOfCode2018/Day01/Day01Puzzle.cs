@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2018.DayOne
+﻿namespace AdventOfCode2018.Day01
 {
     using System;
     using System.Collections.Generic;
@@ -8,22 +8,22 @@
     using System.Reflection;
     using System.Threading.Tasks;
 
-    public class DayOnePuzzle : Puzzle
+    public class Day01Puzzle : Puzzle
     {
         public async override Task<string> PuzzleOne()
         {
-            var resource = "AdventOfCode2018.DayOne.PuzzleOne.txt";
+            var resource = "AdventOfCode2018.Day01.PuzzleOne.txt";
             var input = await this.GetInput(resource);
 
-            return new DayOneSolver().PuzzleOne(input).ToString();
+            return new Day01Solver().PuzzleOne(input).ToString();
         }
 
         public async override Task<string> PuzzleTwo()
         {
-            var resource = "AdventOfCode2018.DayOne.PuzzleOne.txt";
+            var resource = "AdventOfCode2018.Day01.PuzzleOne.txt";
             var input = await this.GetInput(resource);
 
-            return new DayOneSolver().PuzzleTwo(input).ToString();
+            return new Day01Solver().PuzzleTwo(input).ToString();
         }
 
         private async Task<IEnumerable<int>> GetInput(string resource)

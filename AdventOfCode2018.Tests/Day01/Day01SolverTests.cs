@@ -1,11 +1,11 @@
-﻿namespace AdventOfCode2018.Tests.DayOne
+﻿namespace AdventOfCode2018.Tests.Day01
 {
-    using AdventOfCode2018.DayOne;
+    using AdventOfCode2018.Day01;
     using Xunit;
 
-    public class DayOneSolverTests
+    public class Day01SolverTests
     {
-        public DayOneSolver Subject = new DayOneSolver();
+        public Day01Solver Subject = new Day01Solver();
 
         [Theory]
         [InlineData(3, 1, -2, 3, 1)]

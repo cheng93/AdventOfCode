@@ -1,11 +1,11 @@
-using AdventOfCode2018.DayTwo;
+using AdventOfCode2018.Day02;
 using Xunit;
 
-namespace AdventOfCode2018.Tests.DayTwo
+namespace AdventOfCode2018.Tests.Day02
 {
-    public class DayTwoStringParserTests
+    public class Day02StringParserTests
     {
-        private readonly DayTwoStringParser subject = new DayTwoStringParser();
+        private readonly Day02StringParser subject = new Day02StringParser();
 
         [Theory]
         [InlineData(false, "abcdef")]

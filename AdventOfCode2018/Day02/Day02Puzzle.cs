@@ -1,29 +1,29 @@
 
-namespace AdventOfCode2018.DayTwo
+namespace AdventOfCode2018.Day02
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
 
-    public class DayTwoPuzzle : Puzzle
+    public class Day02Puzzle : Puzzle
     {
         public async override Task<string> PuzzleOne()
         {
-            var resource = "AdventOfCode2018.DayTwo.PuzzleOne.txt";
+            var resource = "AdventOfCode2018.Day02.PuzzleOne.txt";
 
             var input = await this.GetInput(resource);
 
-            return new DayTwoSolver().PuzzleOne(input).ToString();
+            return new Day02Solver().PuzzleOne(input).ToString();
         }
 
         public async override Task<string> PuzzleTwo()
         {
-            var resource = "AdventOfCode2018.DayTwo.PuzzleOne.txt";
+            var resource = "AdventOfCode2018.Day02.PuzzleOne.txt";
 
             var input = await this.GetInput(resource);
 
-            return new DayTwoSolver().PuzzleTwo(input);
+            return new Day02Solver().PuzzleTwo(input);
         }
 
         private async Task<IEnumerable<string>> GetInput(string resource)

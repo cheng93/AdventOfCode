@@ -1,6 +1,6 @@
-namespace AdventOfCode2018.DayTwo
+namespace AdventOfCode2018.Day02
 {
-    public class DayTwoString
+    public class Day02String
     {
         public bool HasTwo { get; set; }
 

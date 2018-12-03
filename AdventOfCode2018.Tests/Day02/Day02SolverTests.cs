@@ -1,12 +1,12 @@
 
-namespace AdventOfCode2018.Tests.DayTwo
+namespace AdventOfCode2018.Tests.Day02
 {
-    using AdventOfCode2018.DayTwo;
+    using AdventOfCode2018.Day02;
     using Xunit;
 
-    public class DayTwoSolverTests
+    public class Day02SolverTests
     {
-        private readonly DayTwoSolver subject = new DayTwoSolver();
+        private readonly Day02Solver subject = new Day02Solver();
 
         [Theory]
         [InlineData(12, "abcdef", "bababc", "abbcde", "abcccd", "aabcdd", "abcdee", "ababab")]

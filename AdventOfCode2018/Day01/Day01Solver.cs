@@ -1,10 +1,10 @@
-﻿namespace AdventOfCode2018.DayOne
+﻿namespace AdventOfCode2018.Day01
 {
     using System;
     using System.Collections.Generic;
     using System.Linq;
 
-    public class DayOneSolver
+    public class Day01Solver
     {
         public int PuzzleOne(IEnumerable<int> input) => input.Sum();
 
