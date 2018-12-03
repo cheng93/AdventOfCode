@@ -5,6 +5,7 @@
     using System.Threading.Tasks;
     using Day01;
     using Day02;
+    using Day03;
     using Console = System.Console;
 
     class Program
@@ -12,7 +13,8 @@
         private static IDictionary<int, IPuzzle> puzzles = new Dictionary<int, IPuzzle>()
         {
             {1, new Day01Puzzle()},
-            {2, new Day02Puzzle()}
+            {2, new Day02Puzzle()},
+            {3, new Day03Puzzle()}
         };
 
         public static async Task Main(string[] args)
