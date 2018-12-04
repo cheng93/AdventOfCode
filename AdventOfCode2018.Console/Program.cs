@@ -6,6 +6,7 @@
     using Day01;
     using Day02;
     using Day03;
+    using Day04;
     using Console = System.Console;
 
     class Program
@@ -14,7 +15,8 @@
         {
             {1, new Day01Puzzle()},
             {2, new Day02Puzzle()},
-            {3, new Day03Puzzle()}
+            {3, new Day03Puzzle()},
+            {4, new Day04Puzzle()}
         };
 
         public static async Task Main(string[] args)
