@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics;
     using System.Threading.Tasks;
     using AdventOfCode2018.Day01;
     using AdventOfCode2018.Day02;
@@ -32,25 +33,25 @@
             var puzzleNumber = int.Parse(Console.ReadLine());
             var puzzle = puzzles[puzzleNumber];
 
-            try
-            {
-                Console.WriteLine(await puzzle.PuzzleOne());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
-
-            try
-            {
-                Console.WriteLine(await puzzle.PuzzleTwo());
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-            }
+            await Execute(puzzle.PuzzleOne());
+            await Execute(puzzle.PuzzleTwo());
 
             Console.ReadLine();
+        }
+
+        private static async Task Execute(Task<string> solution)
+        {
+            var watch = Stopwatch.StartNew();
+            try
+            {
+                Console.WriteLine(await solution);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            watch.Stop();
+            Console.WriteLine($"Time taken: {watch.Elapsed.TotalMilliseconds}ms");
         }
     }
 }
