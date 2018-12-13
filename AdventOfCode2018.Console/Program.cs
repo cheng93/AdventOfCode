@@ -14,6 +14,7 @@
     using AdventOfCode2018.Day08;
     using AdventOfCode2018.Day09;
     using AdventOfCode2018.Day10;
+    using AdventOfCode2018.Day11;
     using Console = System.Console;
 
     class Program
@@ -29,7 +30,8 @@
             {7, new Day07Puzzle()},
             {8, new Day08Puzzle()},
             {9, new Day09Puzzle()},
-            {10, new Day10Puzzle()}
+            {10, new Day10Puzzle()},
+            {11, new Day11Puzzle()}
         };
 
         public static async Task Main(string[] args)
@@ -55,7 +57,7 @@
                 Console.WriteLine(e);
             }
             watch.Stop();
-            Console.WriteLine($"Time taken: {watch.Elapsed.TotalMilliseconds}ms");
+            Console.WriteLine($"Time taken: {TimeSpan.FromTicks(watch.ElapsedTicks).TotalMilliseconds}ms");
         }
     }
 }
