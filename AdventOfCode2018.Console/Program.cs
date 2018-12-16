@@ -19,6 +19,7 @@
     using AdventOfCode2018.Day13;
     using AdventOfCode2018.Day14;
     using AdventOfCode2018.Day15;
+    using AdventOfCode2018.Day16;
     using Console = System.Console;
 
     class Program
@@ -39,7 +40,8 @@
             {12, new Day12Puzzle()},
             {13, new Day13Puzzle()},
             {14, new Day14Puzzle()},
-            {15, new Day15Puzzle()}
+            {15, new Day15Puzzle()},
+            {16, new Day16Puzzle()}
         };
 
         public static async Task Main(string[] args)
