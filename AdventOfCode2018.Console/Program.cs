@@ -53,25 +53,25 @@
             var puzzleNumber = int.Parse(Console.ReadLine());
             var puzzle = puzzles[puzzleNumber];
 
-            await Execute(puzzle.PuzzleOne());
-            await Execute(puzzle.PuzzleTwo());
+            await Execute(() => puzzle.PuzzleOne());
+            await Execute(() => puzzle.PuzzleTwo());
 
             Console.ReadLine();
         }
 
-        private static async Task Execute(Task<string> solution)
+        private static async Task Execute(Func<Task<string>> solution)
         {
             var watch = Stopwatch.StartNew();
             try
             {
-                Console.WriteLine(await solution);
+                Console.WriteLine(await solution());
             }
             catch (Exception e)
             {
                 Console.WriteLine(e);
             }
             watch.Stop();
-            Console.WriteLine($"Time taken: {TimeSpan.FromTicks(watch.ElapsedTicks).TotalMilliseconds}ms");
+            Console.WriteLine($"Time taken: {watch.ElapsedMilliseconds}ms");
         }
     }
 }
