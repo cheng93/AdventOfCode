@@ -1,9 +1,10 @@
-﻿namespace AdventOfCode2018.Console
+﻿namespace AAdventOfCode.Console
 {
     using System;
     using System.Collections.Generic;
     using System.Diagnostics;
     using System.Threading.Tasks;
+    using AdventOfCode2018;
     using AdventOfCode2018.Day01;
     using AdventOfCode2018.Day02;
     using AdventOfCode2018.Day03;
