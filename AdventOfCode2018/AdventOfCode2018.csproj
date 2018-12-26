@@ -62,4 +62,8 @@
     <EmbeddedResource Include="Day25\PuzzleOne.txt" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\AdventOfCode.Abstractions\AdventOfCode.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -4,6 +4,7 @@ namespace AdventOfCode2018.Day10
     using System;
     using System.Collections.Generic;
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day10Puzzle : Puzzle
     {

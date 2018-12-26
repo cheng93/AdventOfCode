@@ -5,6 +5,7 @@ namespace AdventOfCode2018.Day02
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day02Puzzle : Puzzle
     {

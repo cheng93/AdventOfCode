@@ -7,6 +7,7 @@
     using System.Linq;
     using System.Reflection;
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day01Puzzle : Puzzle
     {

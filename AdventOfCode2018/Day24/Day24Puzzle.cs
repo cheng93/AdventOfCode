@@ -1,6 +1,7 @@
 namespace AdventOfCode2018.Day24
 {
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day24Puzzle : Puzzle
     {

@@ -1,5 +1,5 @@
 
-namespace AdventOfCode2018
+namespace AdventOfCode.Abstractions
 {
     using System.IO;
     using System.Reflection;

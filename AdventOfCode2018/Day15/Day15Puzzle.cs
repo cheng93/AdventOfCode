@@ -1,6 +1,7 @@
 namespace AdventOfCode2018.Day15
 {
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day15Puzzle : Puzzle
     {

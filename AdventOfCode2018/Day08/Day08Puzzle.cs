@@ -3,6 +3,7 @@ namespace AdventOfCode2018.Day08
     using System.Collections.Generic;
     using System.Linq;
     using System.Threading.Tasks;
+    using AdventOfCode.Abstractions;
 
     public class Day08Puzzle : Puzzle
     {

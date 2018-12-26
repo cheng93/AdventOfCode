@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode2018
+﻿namespace AdventOfCode.Abstractions
 {
     using System.Threading.Tasks;
 
