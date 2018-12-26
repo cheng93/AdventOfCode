@@ -10,4 +10,8 @@
     <ProjectReference Include="..\AdventOfCode2018\AdventOfCode2018.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="CommandLineParser" Version="2.3.65" />
+  </ItemGroup>
+
 </Project>

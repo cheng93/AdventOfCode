@@ -6,6 +6,7 @@
     using System.Threading.Tasks;
     using AdventOfCode.Abstractions;
     using AdventOfCode2018;
+    using CommandLine;
     using Console = System.Console;
 
     class Program
@@ -17,12 +18,18 @@
 
         public static async Task Main(string[] args)
         {
-            var day = int.Parse(Console.ReadLine());
-            var year = 2018;
-            var puzzle = puzzleFactories[year].Create(day);
 
-            await Execute(() => puzzle.PuzzleOne());
-            await Execute(() => puzzle.PuzzleTwo());
+            var parsed = Parser.Default.ParseArguments<ConsoleOptions>(args);
+
+            await parsed.MapResult(
+                async options =>
+                {
+                    var puzzle = puzzleFactories[options.Year].Create(options.Day);
+
+                    await Execute(() => puzzle.PuzzleOne());
+                    await Execute(() => puzzle.PuzzleTwo());
+                },
+                errors => Task.CompletedTask);
 
             Console.ReadLine();
         }

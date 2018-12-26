@@ -13,7 +13,7 @@ namespace AdventOfCode.Abstractions
 
         protected async Task<string> ReadResource(string resource)
         {
-            var assembly = Assembly.GetExecutingAssembly();
+            var assembly = this.GetType().Assembly;
 
             using (var stream = assembly.GetManifestResourceStream(resource))
             using (var reader = new StreamReader(stream))
