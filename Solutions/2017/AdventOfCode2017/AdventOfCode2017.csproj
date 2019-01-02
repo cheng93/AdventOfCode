@@ -7,11 +7,15 @@
   <ItemGroup>
     <None Remove="Day01\Input.txt" />
     <None Remove="Day02\Input.txt" />
+    
+    <None Remove="Day04\Input.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Day01\Input.txt" />
     <EmbeddedResource Include="Day02\Input.txt" />
+
+    <EmbeddedResource Include="Day04\Input.txt" />
   </ItemGroup>
 
   <ItemGroup>
