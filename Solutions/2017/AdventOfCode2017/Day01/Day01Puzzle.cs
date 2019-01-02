@@ -5,14 +5,22 @@ namespace AdventOfCode2017.Day01
 
     public class Day01Puzzle : Puzzle
     {
-        public override Task<string> PuzzleOne()
+        public async override Task<string> PuzzleOne()
         {
-            throw new System.NotImplementedException();
+            var resource = "AdventOfCode2017.Day01.Input.txt";
+
+            var input = await this.ReadResource(resource);
+
+            return new Day01Solver().PuzzleOne(input).ToString();
         }
 
-        public override Task<string> PuzzleTwo()
+        public async override Task<string> PuzzleTwo()
         {
-            throw new System.NotImplementedException();
+            var resource = "AdventOfCode2017.Day01.Input.txt";
+
+            var input = await this.ReadResource(resource);
+
+            return new Day01Solver().PuzzleTwo(input).ToString();
         }
     }
 }
