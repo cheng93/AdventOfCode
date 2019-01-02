@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2018", "AdventOfCode2018\AdventOfCode2018.csproj", "{07D32390-0B20-41A5-9FAE-58AAAD922007}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2018", "Solutions\2018\AdventOfCode2018\AdventOfCode2018.csproj", "{07D32390-0B20-41A5-9FAE-58AAAD922007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2018.Tests", "AdventOfCode2018.Tests\AdventOfCode2018.Tests.csproj", "{B57158C5-9EF1-4E54-BE80-FC7F62744A40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2018.Tests", "Solutions\2018\AdventOfCode2018.Tests\AdventOfCode2018.Tests.csproj", "{B57158C5-9EF1-4E54-BE80-FC7F62744A40}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Console", "AdventOfCode.Console\AdventOfCode.Console.csproj", "{09A1F931-EF2E-450D-91D0-0463F40C556C}"
 EndProject
