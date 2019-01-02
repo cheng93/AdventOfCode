@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Solutions\2018\AdventOfCode2018\AdventOfCode2018.csproj" />
+    <ProjectReference Include="..\Solutions\2017\AdventOfCode2017\AdventOfCode2017.csproj" />
   </ItemGroup>
 
   <ItemGroup>
