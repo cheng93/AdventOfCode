@@ -3,13 +3,14 @@
     using System.Collections.Generic;
     using AdventOfCode.Abstractions;
     using AdventOfCode2017.Day01;
+    using AdventOfCode2017.Day02;
 
     public class Year2017PuzzleFactory : IPuzzleFactory
     {
         private static IDictionary<int, IPuzzle> puzzles = new Dictionary<int, IPuzzle>()
         {
-            {1, new Day01Puzzle()}
-            // {2, new Day02Puzzle()},
+            {1, new Day01Puzzle()},
+            {2, new Day02Puzzle()},
             // {3, new Day03Puzzle()},
             // {4, new Day04Puzzle()},
             // {5, new Day05Puzzle()},
