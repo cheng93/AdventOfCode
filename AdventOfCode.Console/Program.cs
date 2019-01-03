@@ -26,6 +26,11 @@
             await parsed.MapResult(
                 async options =>
                 {
+                    if (options.Debug)
+                    {
+                        Console.WriteLine("Debugging...");
+                        Console.ReadLine();
+                    }
                     var puzzle = puzzleFactories[options.Year].Create(options.Day);
 
                     await Execute(() => puzzle.PuzzleOne());

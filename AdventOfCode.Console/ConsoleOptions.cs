@@ -9,5 +9,8 @@ namespace AdventOfCode.Console
 
         [Option('d', "day", HelpText = "The advent day.")]
         public int Day { get; set; }
+
+        [Option("debug", HelpText = "The advent day.")]
+        public bool Debug { get; set; }
     }
 }
