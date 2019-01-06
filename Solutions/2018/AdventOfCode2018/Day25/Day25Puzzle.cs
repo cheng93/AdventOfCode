@@ -18,7 +18,7 @@ namespace AdventOfCode2018.Day25
 
         public override Task<string> PuzzleTwo()
         {
-            throw new System.NotImplementedException();
+            return Task.FromResult("Year 2018 Completed");
         }
 
         private async Task<IEnumerable<string>> GetInput(string resource)
