@@ -5,6 +5,7 @@
     using System.Diagnostics;
     using System.Threading.Tasks;
     using AdventOfCode.Abstractions;
+    using AdventOfCode2016;
     using AdventOfCode2017;
     using AdventOfCode2018;
     using CommandLine;
@@ -14,6 +15,7 @@
     {
         private static IDictionary<int, IPuzzleFactory> puzzleFactories = new Dictionary<int, IPuzzleFactory>()
         {
+            {2016, new Year2016PuzzleFactory()},
             {2017, new Year2017PuzzleFactory()},
             {2018, new Year2018PuzzleFactory()}
         };
