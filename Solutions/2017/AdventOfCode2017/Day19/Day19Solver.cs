@@ -63,7 +63,7 @@ namespace AdventOfCode2017.Day19
                     sb.Append(character);
                 }
 
-                Point next;
+                Point next = default;
                 if (character == '+')
                 {
                     foreach (var i in new[] { 1, 3 })

@@ -10,7 +10,7 @@ namespace AdventOfCode2018.Day11
         public Point PuzzleOne(int input)
         {
             var power = int.MinValue;
-            Point point;
+            Point point = default;
             for (var i = 1; i <= 298; i++)
             {
                 for (var j = 1; j <= 298; j++)
@@ -47,7 +47,7 @@ namespace AdventOfCode2018.Day11
         public (Point Point, int Size) PuzzleTwo(int input)
         {
             var power = long.MinValue;
-            Point point;
+            Point point = default;
             int size = 0;
 
             var augmented = new Dictionary<Point, long>();

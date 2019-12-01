@@ -89,7 +89,7 @@ namespace AdventOfCode2018.Day20
 
                 if (directions.Contains(letter))
                 {
-                    Size size;
+                    Size size = default;
                     switch (letter)
                     {
                         case 'N':

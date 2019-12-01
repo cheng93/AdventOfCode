@@ -51,7 +51,7 @@ namespace AdventOfCode2018.Day13
             {
                 foreach (var cart in carts.Values.ToList())
                 {
-                    Size changeSize;
+                    Size changeSize = default;
                     switch (cart.Direction)
                     {
                         case '^':
@@ -204,7 +204,7 @@ namespace AdventOfCode2018.Day13
                         continue;
                     }
 
-                    Size changeSize;
+                    Size changeSize = default;
                     switch (cart.Direction)
                     {
                         case '^':
