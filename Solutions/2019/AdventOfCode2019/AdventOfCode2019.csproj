@@ -8,4 +8,12 @@
     <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Day01\PuzzleOne.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Day01\PuzzleOne.txt" />
+  </ItemGroup>
+
 </Project>
