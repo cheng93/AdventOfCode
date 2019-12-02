@@ -10,10 +10,12 @@
 
   <ItemGroup>
     <None Remove="Day01\PuzzleOne.txt" />
+    <None Remove="Day02\PuzzleOne.txt" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Day01\PuzzleOne.txt" />
+    <EmbeddedResource Include="Day02\PuzzleOne.txt" />
   </ItemGroup>
 
 </Project>
