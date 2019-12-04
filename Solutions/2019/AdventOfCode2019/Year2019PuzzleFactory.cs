@@ -5,6 +5,7 @@ namespace AdventOfCode2019
     using AdventOfCode2019.Day01;
     using AdventOfCode2019.Day02;
     using AdventOfCode2019.Day03;
+    using AdventOfCode2019.Day04;
 
     public class Year2019PuzzleFactory : IPuzzleFactory
     {
@@ -13,7 +14,7 @@ namespace AdventOfCode2019
             {1, new Day01Puzzle()},
             {2, new Day02Puzzle()},
             {3, new Day03Puzzle()},
-            // {4, new Day04Puzzle()},
+            {4, new Day04Puzzle()},
             // {5, new Day05Puzzle()},
             // {6, new Day06Puzzle()},
             // {7, new Day07Puzzle()},
