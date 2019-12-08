@@ -16,7 +16,7 @@ namespace AdventOfCode2019.Day02
                 .ToArray();
             input[1] = 12;
             input[2] = 2;
-            return new Day02Solver().PuzzleOne(input);
+            return new Day02MachineSolver().PuzzleOne(input);
         }
 
         public override async Task<string> PuzzleTwo()
@@ -28,7 +28,7 @@ namespace AdventOfCode2019.Day02
                 .ToArray();
             input[1] = 64;
             input[2] = 29;
-            return new Day02Solver().PuzzleOne(input);
+            return new Day02MachineSolver().PuzzleOne(input);
         }
     }
 }

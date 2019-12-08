@@ -11,13 +11,13 @@ namespace AdventOfCode2019.Day07
         public override async Task<string> PuzzleOne()
         {
             var input = await this.GetInput();
-            return new Day07Solver().PuzzleOne(input).ToString();
+            return new Day07MachineSolver().PuzzleOne(input).ToString();
         }
 
         public override async Task<string> PuzzleTwo()
         {
             var input = await this.GetInput();
-            return new Day07Solver().PuzzleTwo(input).ToString();
+            return new Day07MachineSolver().PuzzleTwo(input).ToString();
         }
 
         private async Task<IEnumerable<int>> GetInput()
