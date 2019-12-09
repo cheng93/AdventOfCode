@@ -4,14 +4,14 @@ namespace AdventOfCode2019.IntCode.Internal
 {
     internal class Parameter
     {
-        public Parameter(int immediate, Lazy<int> lazy)
+        public Parameter(long value, Func<long> accessor)
         {
-            this.Mode = lazy;
-            this.Immediate = immediate;
+            this.Program = new Lazy<long>(accessor);
+            this.Value = value;
 
         }
 
-        public int Immediate { get; }
-        public Lazy<int> Mode { get; }
+        public long Value { get; }
+        public Lazy<long> Program { get; }
     }
 }

@@ -16,7 +16,7 @@ namespace AdventOfCode2019.Day07
                 var output = 0;
                 foreach (var number in permutation)
                 {
-                    output = new Machine(input.ToArray(), new int[] { number, output }).Run().First();
+                    output = (int)new Machine(input.Select(x => (long)x), new int[] { number, output }).Run().First();
                 }
                 if (output > signal)
                 {
@@ -43,7 +43,10 @@ namespace AdventOfCode2019.Day07
                     max = output;
                     for (var i = 0; i < permutation.Count(); i++)
                     {
-                        output = new Machine(input.ToArray(), signals[i].ToArray()).Run().Skip(signals[i].Count - 2).FirstOrDefault();
+                        output = (int)new Machine(input.Select(x => (long)x), signals[i].ToArray())
+                            .Run()
+                            .Skip(signals[i].Count - 2)
+                            .FirstOrDefault();
                         signals[(i + 1) % 5].Add(output);
                     }
                 }

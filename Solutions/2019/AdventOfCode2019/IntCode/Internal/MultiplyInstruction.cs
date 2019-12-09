@@ -4,7 +4,7 @@ namespace AdventOfCode2019.IntCode.Internal
 {
     internal class MultiplyInstruction : Instruction
     {
-        public MultiplyInstruction(int instruction) : base(instruction)
+        public MultiplyInstruction(long instruction) : base(instruction)
         {
         }
 
@@ -12,11 +12,9 @@ namespace AdventOfCode2019.IntCode.Internal
         {
             var parameters = this.GetParameters(3, machine);
 
-            machine.Memory[parameters[2].Immediate] = parameters[0].Mode.Value * parameters[1].Mode.Value;
-            return new InstructionResult(machine)
-            {
-                Position = machine.Position + 4
-            };
+            machine.Memory[(int)parameters[2].Value] = parameters[0].Program.Value * parameters[1].Program.Value;
+            machine.Position += 4;
+            return new InstructionResult();
         }
     }
 }

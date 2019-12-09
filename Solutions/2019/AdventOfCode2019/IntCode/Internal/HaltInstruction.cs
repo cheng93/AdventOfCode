@@ -4,7 +4,7 @@ namespace AdventOfCode2019.IntCode.Internal
     {
         public InstructionResult Execute(Machine machine)
         {
-            return new InstructionResult(machine)
+            return new InstructionResult()
             {
                 Halt = true
             };

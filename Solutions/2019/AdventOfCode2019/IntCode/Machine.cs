@@ -6,17 +6,19 @@ namespace AdventOfCode2019.IntCode
 {
     public class Machine
     {
-        public Machine(int[] memory, IEnumerable<int> inputs)
+        public Machine(IEnumerable<long> memory, IEnumerable<int> inputs)
         {
-            this.Memory = memory;
+            this.Memory = new Memory(memory);
             this.inputs = inputs.ToList();
         }
 
-        public int[] Memory { get; private set; }
+        internal Memory Memory { get; private set; }
 
-        public int Position { get; private set; } = 0;
+        internal int Position { get; set; } = 0;
 
-        public IEnumerable<int> Run()
+        internal int RelativeBase { get; set; } = 0;
+
+        public IEnumerable<long> Run()
         {
             while (true)
             {
@@ -26,8 +28,6 @@ namespace AdventOfCode2019.IntCode
                 {
                     break;
                 }
-                this.Position = result.Position;
-                this.Memory = result.Memory;
                 if (result.ProcessedInput)
                 {
                     this.inputsProcessed++;
@@ -39,7 +39,7 @@ namespace AdventOfCode2019.IntCode
             }
         }
 
-        public int GetCurrentInput() => this.inputs[inputsProcessed];
+        internal int GetCurrentInput() => this.inputs[inputsProcessed];
 
         private List<int> inputs;
         private int inputsProcessed = 0;

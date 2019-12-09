@@ -11,13 +11,13 @@ namespace AdventOfCode2019.Day05
         public override async Task<string> PuzzleOne()
         {
             var input = await this.GetInput();
-            return string.Join(',', new Day05MachineSolver().PuzzleOne(input));
+            return string.Join(',', new Day05Solver().PuzzleOne(input));
         }
 
         public override async Task<string> PuzzleTwo()
         {
             var input = await this.GetInput();
-            return string.Join(',', new Day05MachineSolver().PuzzleTwo(input));
+            return string.Join(',', new Day05Solver().PuzzleTwo(input));
         }
 
         private async Task<IEnumerable<int>> GetInput()

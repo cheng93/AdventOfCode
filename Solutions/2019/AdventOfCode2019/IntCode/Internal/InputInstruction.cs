@@ -4,7 +4,7 @@ namespace AdventOfCode2019.IntCode.Internal
 {
     internal class InputInstruction : Instruction
     {
-        public InputInstruction(int instruction) : base(instruction)
+        public InputInstruction(long instruction) : base(instruction)
         {
         }
 
@@ -12,11 +12,11 @@ namespace AdventOfCode2019.IntCode.Internal
         {
             var parameters = this.GetParameters(1, machine);
 
-            machine.Memory[parameters[0].Immediate] = machine.GetCurrentInput();
-            return new InstructionResult(machine)
+            machine.Memory[(int)parameters[0].Value] = machine.GetCurrentInput();
+            machine.Position += 2;
+            return new InstructionResult()
             {
-                ProcessedInput = true,
-                Position = machine.Position + 2
+                ProcessedInput = true
             };
         }
     }

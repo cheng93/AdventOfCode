@@ -10,11 +10,11 @@ namespace AdventOfCode2019.IntCode.Internal
 
     internal abstract class Instruction : IInstruction
     {
-        private readonly int instruction;
+        private readonly long instruction;
 
         public abstract InstructionResult Execute(Machine machine);
 
-        public Instruction(int instruction)
+        public Instruction(long instruction)
         {
             this.instruction = instruction;
         }
@@ -24,12 +24,13 @@ namespace AdventOfCode2019.IntCode.Internal
                 .Skip(machine.Position + 1)
                 .Take(3)
                 .Select((x, i) =>
-                    new Parameter(
-                        x,
-                        new Lazy<int>(() =>
-                            (instruction / (int)Math.Pow(10, 2 + i)) % 10 == 0
-                                ? machine.Memory[x]
-                                : x)))
+                    ((instruction / (long)Math.Pow(10, 2 + i)) % 10) switch
+                    {
+                        0 => new Parameter(x, () => machine.Memory[(int)x]),
+                        1 => new Parameter(x, () => x),
+                        2 => new Parameter(x + machine.RelativeBase, () => machine.Memory[(int)x + machine.RelativeBase]),
+                        _ => throw new InvalidOperationException()
+                    })
                 .ToArray();
 
         public static IInstruction Create(Machine machine)
@@ -47,6 +48,7 @@ namespace AdventOfCode2019.IntCode.Internal
                 6 => new JumpFalseInstruction(instruction),
                 7 => new LessThanInstruction(instruction),
                 8 => new EqualsInstruction(instruction),
+                9 => new AdjustRelativeBaseInstruction(instruction),
                 99 => new HaltInstruction(),
                 _ => throw new InvalidOperationException()
             };

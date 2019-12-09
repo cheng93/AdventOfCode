@@ -9,7 +9,7 @@ namespace AdventOfCode2019.Day02
         public string PuzzleOne(IEnumerable<int> input)
         {
             var program = input.ToArray();
-            var machine = new Machine(program, Enumerable.Empty<int>());
+            var machine = new Machine(program.Select(x => (long)x), Enumerable.Empty<int>());
             machine.Run().ToList();
 
             return string.Join(',', machine.Memory);

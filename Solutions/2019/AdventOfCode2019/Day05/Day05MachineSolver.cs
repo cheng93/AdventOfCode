@@ -13,8 +13,8 @@ namespace AdventOfCode2019.Day05
         private static IEnumerable<int> Solve(IEnumerable<int> input, int systemId)
         {
             var program = input.ToArray();
-            var machine = new Machine(program, new[] { systemId });
-            return machine.Run();
+            var machine = new Machine(program.Select(x => (long)x), new[] { systemId });
+            return machine.Run().Select(x => (int)x);
         }
     }
 }
