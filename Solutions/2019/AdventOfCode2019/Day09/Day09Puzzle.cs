@@ -26,6 +26,5 @@ namespace AdventOfCode2019.Day09
                 .Split(',', StringSplitOptions.RemoveEmptyEntries)
                 .Select(long.Parse);
         }
-
     }
 }
