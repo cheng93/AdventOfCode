@@ -29,6 +29,7 @@
     <None Remove="Day18\PuzzleOne.txt" />
     <None Remove="Day18\PuzzleTwo.txt" />
     <None Remove="Day19\PuzzleOne.txt" />
+    <None Remove="Day20\PuzzleOne.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -52,6 +53,7 @@
     <EmbeddedResource Include="Day18\PuzzleOne.txt" />
     <EmbeddedResource Include="Day18\PuzzleTwo.txt" />
     <EmbeddedResource Include="Day19\PuzzleOne.txt" />
+    <EmbeddedResource Include="Day20\PuzzleOne.txt" />
   </ItemGroup>
 
 </Project>
