@@ -1,91 +1,70 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
 using System.Linq;
 
-namespace AdventOfCode2019.Day17
+namespace AdventOfCode2019.Day19
 {
-    public class Day17Solver
+    public class Day19Solver
     {
         public int PuzzleOne(IEnumerable<long> input)
         {
-            var points = new Dictionary<Point, int>();
-            var point = new Point(0, 0);
-            var intersections = new HashSet<Point>();
-
-            foreach (var output in IntCode(input, new List<long>()))
+            var count = 0;
+            for (var i = 0; i < 50; i++)
             {
-                if (output == 10)
+                for (var j = 0; j < 50; j++)
                 {
-                    point = Point.Add(point, new Size(point.X * -1, 1));
+                    var instructions = new List<long>();
+                    instructions.Add(i);
+                    instructions.Add(j);
+
+                    var output = IntCode(input, instructions).First();
+                    if (output == 1)
+                    {
+                        count++;
+                    }
+                }
+            }
+
+            return count;
+        }
+
+        public int PuzzleTwo(IEnumerable<long> input)
+        {
+            var x = 0L;
+            var y = 0L;
+            var minX = (long?)null;
+            while (true)
+            {
+                var output = IntCode(input, new List<long> { x, y }).First();
+                if (output == 1)
+                {
+                    var topRight = IntCode(input, new List<long> { x + 99, y }).First() == 1;
+                    var bottomLeft = IntCode(input, new List<long> { x, y + 99 }).First() == 1;
+
+                    var exit = topRight && bottomLeft;
+                    if (exit)
+                    {
+                        return (int)(x * 10000 + y);
+                    }
+                    else if (topRight)
+                    {
+                        if (!minX.HasValue)
+                        {
+                            minX = x;
+                        }
+                        x++;
+                    }
+                    else
+                    {
+                        y += minX.HasValue ? 1 : 100;
+                        x = minX ?? 0;
+                    }
                 }
                 else
                 {
-                    points[point] = (int)output;
-
-                    if ((char)output == '#')
-                    {
-                        var up = Point.Add(point, new Size(0, -1));
-                        var left = Point.Add(point, new Size(-1, 0));
-                        var pointsToCheck = new[] { up, left };
-
-                        foreach (var p in pointsToCheck)
-                        {
-                            if (points.ContainsKey(p) && (char)points[p] == '#')
-                            {
-                                if (CheckIntersections(p))
-                                {
-                                    intersections.Add(p);
-                                }
-                            }
-                        }
-                    }
-
-                    point = Point.Add(point, new Size(1, 0));
+                    x++;
                 }
             }
-
-            bool CheckIntersections(Point p)
-            {
-                var sizes = new Size[]
-                {
-                    new Size(0, -1),
-                    new Size(1, 0),
-                    new Size(0, 1),
-                    new Size(-1, 0),
-                };
-
-                return sizes.Count(x =>
-                {
-                    var newPoint = Point.Add(p, x);
-                    return points.ContainsKey(newPoint) && (char)points[newPoint] == '#';
-                }) >= 3;
-            }
-
-            return intersections.Select(x => x.X * x.Y).Sum();
-        }
-
-        public long PuzzleTwo(IEnumerable<long> input)
-        {
-            var routine = "A,B,A,C,B,C,B,A,C,B";
-            var a = "L,10,L,6,R,10";
-            var b = "R,6,R,8,R,8,L,6,R,8";
-            var c = "L,10,R,8,R,8,L,10";
-            var render = "n";
-
-            var instructions = new[] { routine, a, b, c, render }
-                .Select(x => x.Select(y => (long)y))
-                .Aggregate(
-                    new List<long>(),
-                    (acc, cur) =>
-                    {
-                        acc.AddRange(cur);
-                        acc.Add(10);
-                        return acc;
-                    });
-
-            var dust = IntCode(input, instructions).Last();
-            return dust;
         }
 
         private static IEnumerable<long> IntCode(IEnumerable<long> input, List<long> signals)
