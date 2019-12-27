@@ -32,6 +32,7 @@
     <None Remove="Day20\PuzzleOne.txt" />
     <None Remove="Day21\PuzzleOne.txt" />
     <None Remove="Day22\PuzzleOne.txt" />
+    <None Remove="Day23\PuzzleOne.txt" />
   </ItemGroup>
 
   <ItemGroup>
@@ -58,6 +59,11 @@
     <EmbeddedResource Include="Day20\PuzzleOne.txt" />
     <EmbeddedResource Include="Day21\PuzzleOne.txt" />
     <EmbeddedResource Include="Day22\PuzzleOne.txt" />
+    <EmbeddedResource Include="Day23\PuzzleOne.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Reactive" Version="4.3.2" />
   </ItemGroup>
 
 </Project>
