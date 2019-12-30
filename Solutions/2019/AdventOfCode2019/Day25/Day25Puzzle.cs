@@ -4,25 +4,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using AdventOfCode.Abstractions;
 
-namespace AdventOfCode2019.Day23
+namespace AdventOfCode2019.Day25
 {
-    public class Day23Puzzle : Puzzle
+    public class Day25Puzzle : Puzzle
     {
         public override async Task<string> PuzzleOne()
         {
             var input = await this.GetInput();
-            return new Day23Solver().PuzzleOne(input).ToString();
+            return new Day25Solver().PuzzleOne(input).ToString();
+            // return new Day25ManualSolver().PuzzleOne(input).ToString();
         }
 
-        public override async Task<string> PuzzleTwo()
+        public override Task<string> PuzzleTwo()
         {
-            var input = await this.GetInput();
-            return new Day23Solver().PuzzleTwo(input).ToString();
+            return Task.FromResult("Year 2019 Completed");
         }
 
         private async Task<IEnumerable<long>> GetInput()
         {
-            return (await this.ReadResource("AdventOfCode2019.Day23.PuzzleOne.txt"))
+            return (await this.ReadResource("AdventOfCode2019.Day25.PuzzleOne.txt"))
                 .Split(',', StringSplitOptions.RemoveEmptyEntries)
                 .Select(long.Parse);
         }
