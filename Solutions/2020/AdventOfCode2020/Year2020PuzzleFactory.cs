@@ -1,6 +1,7 @@
 ﻿using System;
 using AdventOfCode.Abstractions;
 using AdventOfCode2020.Day01;
+using AdventOfCode2020.Day02;
 
 namespace AdventOfCode2020
 {
@@ -10,6 +11,7 @@ namespace AdventOfCode2020
             => day switch
             {
                 1 => new Day01Puzzle(),
+                2 => new Day02Puzzle(),
                 _ => throw new ArgumentException(nameof(day))
             };
     }
