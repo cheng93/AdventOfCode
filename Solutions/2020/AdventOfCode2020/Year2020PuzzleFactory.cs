@@ -14,6 +14,7 @@ using AdventOfCode2020.Day11;
 using AdventOfCode2020.Day12;
 using AdventOfCode2020.Day13;
 using AdventOfCode2020.Day14;
+using AdventOfCode2020.Day15;
 
 namespace AdventOfCode2020
 {
@@ -36,6 +37,7 @@ namespace AdventOfCode2020
                 12 => new Day12Puzzle(),
                 13 => new Day13Puzzle(),
                 14 => new Day14Puzzle(),
+                15 => new Day15Puzzle(),
                 _ => throw new ArgumentException(nameof(day))
             };
     }
