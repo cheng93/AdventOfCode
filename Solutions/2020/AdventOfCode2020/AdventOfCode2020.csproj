@@ -4,10 +4,6 @@
     <ProjectReference Include="..\..\..\AdventOfCode.Abstractions\AdventOfCode.Abstractions.csproj" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Day01\Input.txt" />
     <None Remove="Day02\Input.txt" />
