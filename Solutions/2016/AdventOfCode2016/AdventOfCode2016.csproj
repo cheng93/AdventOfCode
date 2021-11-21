@@ -1,24 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <None Remove="Day01\Input.txt" />
-    <None Remove="Day02\Input.txt" />
-    <None Remove="Day03\Input.txt" />
-    <None Remove="Day04\Input.txt" />
-
-    <None Remove="Day06\Input.txt" />
-    <None Remove="Day07\Input.txt" />
-    <None Remove="Day08\Input.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Day01\Input.txt" />
-    <EmbeddedResource Include="Day02\Input.txt" />
-    <EmbeddedResource Include="Day03\Input.txt" />
-    <EmbeddedResource Include="Day04\Input.txt" />
-
-    <EmbeddedResource Include="Day06\Input.txt" />
-    <EmbeddedResource Include="Day07\Input.txt" />
-    <EmbeddedResource Include="Day08\Input.txt" />
+    <None Remove="Day*\*.txt" />
+    <EmbeddedResource Include="Day*\*.txt" />
   </ItemGroup>
 
   <ItemGroup>

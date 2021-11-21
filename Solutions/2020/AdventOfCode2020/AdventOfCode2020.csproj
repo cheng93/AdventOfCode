@@ -1,62 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <None Remove="Day*\*.txt" />
+    <EmbeddedResource Include="Day*\*.txt" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\AdventOfCode.Abstractions\AdventOfCode.Abstractions.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="Day01\Input.txt" />
-    <None Remove="Day02\Input.txt" />
-    <None Remove="Day03\Input.txt" />
-    <None Remove="Day04\Input.txt" />
-    <None Remove="Day05\Input.txt" />
-    <None Remove="Day06\Input.txt" />
-    <None Remove="Day07\Input.txt" />
-    <None Remove="Day08\Input.txt" />
-    <None Remove="Day09\Input.txt" />
-    <None Remove="Day10\Input.txt" />
-    <None Remove="Day11\Input.txt" />
-    <None Remove="Day12\Input.txt" />
-    <None Remove="Day13\Input.txt" />
-    <None Remove="Day14\Input.txt" />
-
-    <None Remove="Day16\Input.txt" />
-    <None Remove="Day17\Input.txt" />
-    <None Remove="Day18\Input.txt" />
-    <None Remove="Day19\Input.txt" />
-    <None Remove="Day20\Input.txt" />
-    <None Remove="Day21\Input.txt" />
-    <None Remove="Day22\Input.txt" />
-
-    <None Remove="Day24\Input.txt" />
-    <None Remove="Day25\Input.txt" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Day01\Input.txt" />
-    <EmbeddedResource Include="Day02\Input.txt" />
-    <EmbeddedResource Include="Day03\Input.txt" />
-    <EmbeddedResource Include="Day04\Input.txt" />
-    <EmbeddedResource Include="Day05\Input.txt" />
-    <EmbeddedResource Include="Day06\Input.txt" />
-    <EmbeddedResource Include="Day07\Input.txt" />
-    <EmbeddedResource Include="Day08\Input.txt" />
-    <EmbeddedResource Include="Day09\Input.txt" />
-    <EmbeddedResource Include="Day10\Input.txt" />
-    <EmbeddedResource Include="Day11\Input.txt" />
-    <EmbeddedResource Include="Day12\Input.txt" />
-    <EmbeddedResource Include="Day13\Input.txt" />
-    <EmbeddedResource Include="Day14\Input.txt" />
-
-    <EmbeddedResource Include="Day16\Input.txt" />
-    <EmbeddedResource Include="Day17\Input.txt" />
-    <EmbeddedResource Include="Day18\Input.txt" />
-    <EmbeddedResource Include="Day19\Input.txt" />
-    <EmbeddedResource Include="Day20\Input.txt" />
-    <EmbeddedResource Include="Day21\Input.txt" />
-    <EmbeddedResource Include="Day22\Input.txt" />
-
-    <EmbeddedResource Include="Day24\Input.txt" />
-    <EmbeddedResource Include="Day25\Input.txt" />
   </ItemGroup>
 </Project>
