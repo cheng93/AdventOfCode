@@ -10,6 +10,7 @@
     using AdventOfCode2018;
     using AdventOfCode2019;
     using AdventOfCode2020;
+    using AdventOfCode2021;
     using CommandLine;
     using Console = System.Console;
 
@@ -21,7 +22,8 @@
             {2017, new Year2017PuzzleFactory()},
             {2018, new Year2018PuzzleFactory()},
             {2019, new Year2019PuzzleFactory()},
-            {2020, new Year2020PuzzleFactory()}
+            {2020, new Year2020PuzzleFactory()},
+            {2021, new Year2021PuzzleFactory()}
         };
 
         public static async Task Main(string[] args)
