@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Day*\*.txt" />
+    <EmbeddedResource Include="Day*\*.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\AdventOfCode.Abstractions\AdventOfCode.Abstractions.csproj" />
+    <Using Include="AdventOfCode.Abstractions" />
+  </ItemGroup>
+</Project>
