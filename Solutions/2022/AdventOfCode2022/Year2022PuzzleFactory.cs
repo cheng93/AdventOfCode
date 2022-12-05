@@ -2,6 +2,7 @@ using AdventOfCode2022.Day01;
 using AdventOfCode2022.Day02;
 using AdventOfCode2022.Day03;
 using AdventOfCode2022.Day04;
+using AdventOfCode2022.Day05;
 
 namespace AdventOfCode2022;
 
@@ -14,6 +15,7 @@ public class Year2022PuzzleFactory : IPuzzleFactory
             2 => new Day02Puzzle(),
             3 => new Day03Puzzle(),
             4 => new Day04Puzzle(),
+            5 => new Day05Puzzle(),
             _ => throw new ArgumentException(nameof(day))
         };
 }
