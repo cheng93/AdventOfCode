@@ -11,6 +11,7 @@
     using AdventOfCode2016.Day07;
     using AdventOfCode2016.Day08;
     using AdventOfCode2016.Day09;
+    using AdventOfCode2016.Day10;
 
     public class Year2016PuzzleFactory : IPuzzleFactory
     {
@@ -25,7 +26,7 @@
             {7, new Day07Puzzle()},
             {8, new Day08Puzzle()},
             {9, new Day09Puzzle()},
-            // {10, new Day10Puzzle()},
+            {10, new Day10Puzzle()},
             // {11, new Day11Puzzle()},
             // {12, new Day12Puzzle()},
             // {13, new Day13Puzzle()},
