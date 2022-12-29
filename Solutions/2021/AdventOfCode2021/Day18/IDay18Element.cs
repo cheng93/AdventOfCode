@@ -131,7 +131,7 @@ public record Day18Pair : IDay18Element
 
     public int Magnitude => Left.Magnitude * 3 + Right.Magnitude * 2;
 
-    private IDay18Element _left;
+    private IDay18Element _left = default!;
     public IDay18Element Left
     {
         get => _left;
@@ -142,7 +142,7 @@ public record Day18Pair : IDay18Element
         }
     }
 
-    private IDay18Element _right;
+    private IDay18Element _right = default!;
     public IDay18Element Right
     {
         get => _right;
