@@ -6,7 +6,7 @@ using AdventOfCode2023.Day05;
 using AdventOfCode2023.Day06;
 using AdventOfCode2023.Day07;
 using AdventOfCode2023.Day08;
-// using AdventOfCode2023.Day09;
+using AdventOfCode2023.Day09;
 // using AdventOfCode2023.Day10;
 // using AdventOfCode2023.Day11;
 // using AdventOfCode2023.Day12;
@@ -39,7 +39,7 @@ public class Year2023PuzzleFactory : IPuzzleFactory
             6 => new Day06Puzzle(),
             7 => new Day07Puzzle(),
             8 => new Day08Puzzle(),
-            // 9 => new Day09Puzzle(),
+            9 => new Day09Puzzle(),
             // 10 => new Day10Puzzle(),
             // 11 => new Day11Puzzle(),
             // 12 => new Day12Puzzle(),
