@@ -1,0 +1,23 @@
+p' = p + v*t
+
+rp + rv*t = hp + hv*t
+rp = hp + (hv - rv)*t
+
+t = (rp - hp)/(hv - rv)
+
+(rxp - hxp)/(hxv - rxv) = (ryp - hyp)/(hyv - ryv)
+(rxp - hxp)*(hyv - ryv)/(hxv - rxv)  = ryp - hyp
+
+ryp = (rxp - hxp)*(hyv-ryv)/(hxv - rxv) + hyp
+
+let qm = (qyv - ryv)/(qxv - rxv)
+
+ryp  = (rxp - hxp)*hm + hyp
+
+(rxp - axp)*am + ayp = (rxp - bxp)*bm + byp
+rxp*am - axp*am + ayp = rxp*bm - bxp*bm + byp 
+rxp(am - bm) = axp*am - ayp - bxp * bm + byp
+
+let qc = qxp*qm - qyp
+
+rxp = (ac - bc)/(am - bm)
