@@ -4,7 +4,7 @@ using AdventOfCode2015.Day03;
 using AdventOfCode2015.Day04;
 using AdventOfCode2015.Day05;
 using AdventOfCode2015.Day06;
-// using AdventOfCode2015.Day07;
+using AdventOfCode2015.Day07;
 // using AdventOfCode2015.Day08;
 // using AdventOfCode2015.Day09;
 // using AdventOfCode2015.Day10;
@@ -37,7 +37,7 @@ public class Year2015PuzzleFactory : IPuzzleFactory
             4 => new Day04Puzzle(),
             5 => new Day05Puzzle(),
             6 => new Day06Puzzle(),
-            // 7 => new Day07Puzzle(),
+            7 => new Day07Puzzle(),
             // 8 => new Day08Puzzle(),
             // 9 => new Day09Puzzle(),
             // 10 => new Day10Puzzle(),
