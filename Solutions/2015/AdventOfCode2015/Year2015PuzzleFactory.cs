@@ -13,7 +13,7 @@ using AdventOfCode2015.Day12;
 using AdventOfCode2015.Day13;
 using AdventOfCode2015.Day14;
 using AdventOfCode2015.Day15;
-// using AdventOfCode2015.Day16;
+using AdventOfCode2015.Day16;
 // using AdventOfCode2015.Day17;
 // using AdventOfCode2015.Day18;
 // using AdventOfCode2015.Day19;
@@ -46,7 +46,7 @@ public class Year2015PuzzleFactory : IPuzzleFactory
             13 => new Day13Puzzle(),
             14 => new Day14Puzzle(),
             15 => new Day15Puzzle(),
-            // 16 => new Day16Puzzle(),
+            16 => new Day16Puzzle(),
             // 17 => new Day17Puzzle(),
             // 18 => new Day18Puzzle(),
             // 19 => new Day19Puzzle(),
