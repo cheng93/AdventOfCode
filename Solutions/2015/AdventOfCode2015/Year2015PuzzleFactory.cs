@@ -22,7 +22,7 @@ using AdventOfCode2015.Day21;
 using AdventOfCode2015.Day22;
 using AdventOfCode2015.Day23;
 using AdventOfCode2015.Day24;
-// using AdventOfCode2015.Day25;
+using AdventOfCode2015.Day25;
 
 namespace AdventOfCode2015;
 
@@ -55,7 +55,7 @@ public class Year2015PuzzleFactory : IPuzzleFactory
             22 => new Day22Puzzle(),
             23 => new Day23Puzzle(),
             24 => new Day24Puzzle(),
-            // 25 => new Day25Puzzle(),
+            25 => new Day25Puzzle(),
             _ => throw new ArgumentException(nameof(day))
         };
 }
