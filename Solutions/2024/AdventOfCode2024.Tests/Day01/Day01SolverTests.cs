@@ -6,8 +6,15 @@ public class Day01SolverTests
         = new TheoryData<int, string>()
         {
                 {
-                    0,
-                    ""
+                    11,
+                    """
+                    3   4
+                    4   3
+                    2   5
+                    1   3
+                    3   9
+                    3   3
+                    """
                 }
         };
 
@@ -24,8 +31,15 @@ public class Day01SolverTests
         = new TheoryData<int, string>()
         {
                 {
-                    0,
-                    ""
+                    31,
+                    """
+                    3   4
+                    4   3
+                    2   5
+                    1   3
+                    3   9
+                    3   3
+                    """
                 }
         };
 
