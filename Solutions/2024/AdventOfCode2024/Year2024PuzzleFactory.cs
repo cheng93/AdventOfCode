@@ -3,7 +3,7 @@ using AdventOfCode2024.Day02;
 using AdventOfCode2024.Day03;
 using AdventOfCode2024.Day04;
 using AdventOfCode2024.Day05;
-// using AdventOfCode2024.Day06;
+using AdventOfCode2024.Day06;
 // using AdventOfCode2024.Day07;
 // using AdventOfCode2024.Day08;
 // using AdventOfCode2024.Day09;
@@ -36,7 +36,7 @@ public class Year2024PuzzleFactory : IPuzzleFactory
             3 => new Day03Puzzle(),
             4 => new Day04Puzzle(),
             5 => new Day05Puzzle(),
-            // 6 => new Day06Puzzle(),
+            6 => new Day06Puzzle(),
             // 7 => new Day07Puzzle(),
             // 8 => new Day08Puzzle(),
             // 9 => new Day09Puzzle(),
