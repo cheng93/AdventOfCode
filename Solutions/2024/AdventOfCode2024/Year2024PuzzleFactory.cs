@@ -21,7 +21,7 @@ using AdventOfCode2024.Day20;
 using AdventOfCode2024.Day21;
 using AdventOfCode2024.Day22;
 using AdventOfCode2024.Day23;
-// using AdventOfCode2024.Day24;
+using AdventOfCode2024.Day24;
 // using AdventOfCode2024.Day25;
 
 namespace AdventOfCode2024;
@@ -54,7 +54,7 @@ public class Year2024PuzzleFactory : IPuzzleFactory
             21 => new Day21Puzzle(),
             22 => new Day22Puzzle(),
             23 => new Day23Puzzle(),
-            // 24 => new Day24Puzzle(),
+            24 => new Day24Puzzle(),
             // 25 => new Day25Puzzle(),
             _ => throw new ArgumentException(nameof(day))
         };
