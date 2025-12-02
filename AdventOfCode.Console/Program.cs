@@ -15,6 +15,7 @@ using AdventOfCode2021;
 using AdventOfCode2022;
 using AdventOfCode2023;
 using AdventOfCode2024;
+using AdventOfCode2025;
 using CommandLine;
 using Console = System.Console;
 
@@ -31,7 +32,8 @@ class Program
         {2021, new Year2021PuzzleFactory()},
         {2022, new Year2022PuzzleFactory()},
         {2023, new Year2023PuzzleFactory()},
-        {2024, new Year2024PuzzleFactory()}
+        {2024, new Year2024PuzzleFactory()},
+        {2025, new Year2025PuzzleFactory()}
     };
 
     public static async Task Main(string[] args)
