@@ -29,7 +29,7 @@ nearby tickets:
 
         [Theory]
         [MemberData(nameof(PuzzleOneTestData))]
-        public void PuzzleOne(long expected, string input)
+        public void PuzzleOne(int expected, string input)
         {
             var actual = this.subject.PuzzleOne(input);
 

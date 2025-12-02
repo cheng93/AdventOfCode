@@ -75,7 +75,7 @@ iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719"
 
         [Theory]
         [MemberData(nameof(PuzzleTwoTestData))]
-        public void PuzzleTwo(int expected, string input)
+        public void PuzzleTwo(long expected, string input)
         {
             var actual = this.subject.PuzzleTwo(input);
 

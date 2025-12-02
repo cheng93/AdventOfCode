@@ -21,7 +21,7 @@ namespace AdventOfCode2020.Tests.Day17
 
         [Theory]
         [MemberData(nameof(PuzzleOneTestData))]
-        public void PuzzleOne(long expected, string input)
+        public void PuzzleOne(int expected, string input)
         {
             var actual = this.subject.PuzzleOne(input);
 
@@ -42,7 +42,7 @@ namespace AdventOfCode2020.Tests.Day17
 
         [Theory]
         [MemberData(nameof(PuzzleTwoTestData))]
-        public void PuzzleTwo(long expected, string input)
+        public void PuzzleTwo(int expected, string input)
         {
             var actual = this.subject.PuzzleTwo(input);
 

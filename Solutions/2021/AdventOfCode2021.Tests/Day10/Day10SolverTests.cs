@@ -55,7 +55,7 @@ public class Day10SolverTests
 
     [Theory]
     [MemberData(nameof(PuzzleTwoTestData))]
-    public void PuzzleTwo(long expected, params string[] input)
+    public void PuzzleTwo(int expected, params string[] input)
     {
         var actual = Day10Solver.PuzzleTwo(input);
 

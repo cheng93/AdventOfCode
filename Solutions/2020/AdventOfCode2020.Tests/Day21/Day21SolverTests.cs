@@ -25,7 +25,7 @@ namespace AdventOfCode2020.Tests.Day21
 
         [Theory]
         [MemberData(nameof(PuzzleOneTestData))]
-        public void PuzzleOne(int expected, IEnumerable<string> input)
+        public void PuzzleOne(long expected, IEnumerable<string> input)
         {
             var actual = this.subject.PuzzleOne(input);
 
