@@ -73,6 +73,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2025", "Solutio
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode2025.Tests", "Solutions\2025\AdventOfCode2025.Tests\AdventOfCode2025.Tests.csproj", "{A1879863-46BC-4674-880D-BCDC6CE9AA2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventOfCode.Abstractions", "AdventOfCode.Abstractions\AdventOfCode.Abstractions.csproj", "{E18BD777-8932-49BD-8673-0C9B3D98A2DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -374,6 +376,18 @@ Global
 		{A1D8519E-A1FE-4CEE-A444-0DA8CAA05D92}.Release|x64.Build.0 = Release|Any CPU
 		{A1D8519E-A1FE-4CEE-A444-0DA8CAA05D92}.Release|x86.ActiveCfg = Release|Any CPU
 		{A1D8519E-A1FE-4CEE-A444-0DA8CAA05D92}.Release|x86.Build.0 = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|x64.Build.0 = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Debug|x86.Build.0 = Debug|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|x64.ActiveCfg = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|x64.Build.0 = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|x86.ActiveCfg = Release|Any CPU
+		{E18BD777-8932-49BD-8673-0C9B3D98A2DC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8DC13A9F-935D-49DD-B7F2-9EB3D8C4070F} = {5B8C84C3-C5A9-4B75-8F07-17DA9706597C}

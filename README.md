@@ -6,7 +6,7 @@ This repository contains my solutions to [Advent Of Code puzzles](https://advent
 
 ### Prerequisites
 
--   .NET 6
+-   .NET 10
 
 ### Running the app
 
